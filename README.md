@@ -2,9 +2,9 @@
 # react-ghfork - GitHub fork image for React
 
 ```javascript
-var Fork = require('react-ghpages');
+var Fork = require('react-ghfork');
 
-require('react-ghpages/style.css');
+require('react-ghfork/style.css');
 
 <Fork project='bebraw/react-ghfork'></Fork>
 ```
