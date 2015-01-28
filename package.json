@@ -1,0 +1,25 @@
+{
+  "name": "react-ghfork",
+  "description": "",
+  "author": "Juho Vepsalainen <bebraw@gmail.com>",
+  "version": "0.0.0",
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bebraw/react-ghfork.git"
+  },
+  "homepage": "https://github.com/bebraw/react-ghfork",
+  "bugs": {
+    "url": "https://github.com/bebraw/react-ghfork/issues"
+  },
+  "keywords": [],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/bebraw/react-ghfork/blob/master/LICENSE"
+    }
+  ]
+}
