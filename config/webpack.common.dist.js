@@ -7,7 +7,7 @@ var common = require('./webpack.common');
 module.exports = extend(common, {
     entry: './index',
     externals: {
-        react: 'React',
+        react: 'react',
     },
     module: {
         loaders: common.loaders.concat([{
