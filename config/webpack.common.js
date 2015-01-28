@@ -6,7 +6,7 @@ module.exports = {
         './demo/index'
     ],
     resolve: {
-        extensions: ['', '.js', '.jsx', '.css'],
+        extensions: ['', '.js', '.jsx', '.md', '.css'],
     },
 };
 
@@ -18,13 +18,5 @@ module.exports.loaders = [
     {
         test: /\.md$/,
         loader: 'html!../loaders/markdown',
-    },
-    {
-        test: /\.png$/,
-        loader: 'url-loader?limit=100000&mimetype=image/png',
-    },
-    {
-        test: /\.jpg$/,
-        loader: 'file-loader',
     },
 ];
