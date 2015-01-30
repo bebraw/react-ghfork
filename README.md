@@ -4,10 +4,34 @@
 ```javascript
 var Fork = require('react-ghfork');
 
-require('react-ghfork/style.css');
+require('react-ghfork/gh-fork-ribbon.ie.css'); // ie support
+require('react-ghfork/gh-fork-ribbon.css');
 
-<Fork project='bebraw/react-ghfork'></Fork>
+...
+
+module.exports = React.createClass({
+    render() {
+        var project = 'bebraw/react-ghfork';
+
+        return <article>
+            <Fork project={project} className='left'></Fork>
+            <Fork project={project} className='right' style={{
+                backgroundColor: '#000'
+            }}></Fork>
+            <Fork project={project} className='left-bottom' style={{
+                backgroundColor: '#060'
+            }}></Fork>
+            <Fork project={project} className='right-bottom' text='Forkkaa minut'></Fork>
+
+            <div dangerouslySetInnerHTML={{__html: readme}}></div>
+        </article>;
+    },
+});
 ```
+
+## Acknowledgements
+
+Styling by [Simon Whitaker](http://simonwhitaker.github.io/github-fork-ribbon-css/) (MIT). This library just wraps his work.
 
 ## License
 

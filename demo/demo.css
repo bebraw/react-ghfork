@@ -2,6 +2,8 @@ body {
     background: #ddd;
 
     font-family: Sans-Serif;
+
+    line-height: 1.5;
 }
 
 article {
@@ -9,4 +11,9 @@ article {
     margin-right: auto;
 
     max-width: 768px;
+}
+
+pre {
+    background: #fafefe;
+    padding: 0.5em;
 }
