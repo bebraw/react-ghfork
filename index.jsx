@@ -3,14 +3,6 @@
 var React = require('react');
 
 
-/*
-<div class="github-fork-ribbon-wrapper left">
-    <div class="github-fork-ribbon">
-        <a href="https://github.com/simonwhitaker/github-fork-ribbon-css">Fork me on GitHub</a>
-    </div>
-</div>
- */
-
 module.exports = React.createClass({
     render() {
         var className = 'github-fork-ribbon-wrapper';
