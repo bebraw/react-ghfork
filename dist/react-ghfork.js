@@ -61,12 +61,18 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	module.exports = React.createClass({displayName: "exports",
 	    render:function() {
-	        return React.createElement("a", {href: 'https://github.com/' + this.props.project}, 
-	            React.createElement("img", {
-	                className: "github-fork", 
-	                src: "https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67", 
-	                alt: "Fork me on GitHub", 
-	                "data-canonical-src": "https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"})
+	        var className = 'github-fork-ribbon-wrapper';
+
+	        if(this.props.className) {
+	            className += ' ' + this.props.className;
+	        }
+
+	        var text = this.props.text || 'Fork me on GitHub';
+
+	        return React.createElement("div", {className: className}, 
+	            React.createElement("div", {className: "github-fork-ribbon", style: this.props.style}, 
+	                React.createElement("a", {href: 'https://github.com/' + this.props.project}, text)
+	            )
 	        );
 	    }
 	});
