@@ -2,7 +2,7 @@
   "name": "react-ghfork",
   "description": "GitHub fork image for React",
   "author": "Juho Vepsalainen <bebraw@gmail.com>",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "scripts": {
     "prepublish": "npm run dist",
     "start": "node server.js",
