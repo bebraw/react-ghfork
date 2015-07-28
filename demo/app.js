@@ -18,7 +18,7 @@ module.exports = React.createClass({
         var project = 'bebraw/react-ghfork';
 
         return <article>
-            <Fork project={project} className='left'></Fork>
+            <Fork project={project} className='left' target='_blank'></Fork>
             <Fork project={project} className='right' style={{
                 backgroundColor: '#000'
             }}></Fork>

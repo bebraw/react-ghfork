@@ -5,17 +5,16 @@ var React = require('react');
 
 module.exports = React.createClass({
     render() {
-        var className = 'github-fork-ribbon-wrapper';
+        let {text, style, className ...props} = this.props;
 
-        if(this.props.className) {
-            className += ' ' + this.props.className;
-        }
+        className = className || '';
+        className += ' github-fork-ribbon-wrapper';
 
-        var text = this.props.text || 'Fork me on GitHub';
+        text = this.props.text || 'Fork me on GitHub';
 
         return <div className={className}>
-            <div className='github-fork-ribbon' style={this.props.style}>
-                <a href={'https://github.com/' + this.props.project}>{text}</a>
+            <div className='github-fork-ribbon' style={style}>
+                <a href={'https://github.com/' + this.props.project} {...props}>{text}</a>
             </div>
         </div>;
     }
