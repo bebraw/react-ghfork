@@ -2,7 +2,7 @@
   "name": "react-ghfork",
   "description": "GitHub fork image for React",
   "author": "Juho Vepsalainen <bebraw@gmail.com>",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "scripts": {
     "start": "node server.js",
     "gh-pages": "webpack --config ./config/webpack.gh-pages.js",
