@@ -12,7 +12,7 @@ module.exports = extend(common, {
     module: {
         loaders: common.loaders.concat([{
             test: /\.(js|jsx)$/,
-            loaders: ['jsx?harmony'],
+            loaders: ['babel?stage=1'],
             exclude: /node_modules/,
         }])
     }
