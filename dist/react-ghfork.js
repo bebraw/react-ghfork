@@ -69,9 +69,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var _props = this.props;
 	        var text = _props.text;
 	        var style = _props.style;
+	        var project = _props.project;
 	        var className = _props.className;
 
-	        var props = _objectWithoutProperties(_props, ['text', 'style', 'className']);
+	        var props = _objectWithoutProperties(_props, ['text', 'style', 'project', 'className']);
 
 	        className = className || '';
 	        className += ' github-fork-ribbon-wrapper';
@@ -86,7 +87,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                { className: 'github-fork-ribbon', style: style },
 	                React.createElement(
 	                    'a',
-	                    _extends({ href: 'https://github.com/' + this.props.project }, props),
+	                    _extends({ href: 'https://github.com/' + project }, props),
 	                    text
 	                )
 	            )
