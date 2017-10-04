@@ -52,7 +52,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -62,46 +62,41 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var React = __webpack_require__(1);
 
-	module.exports = React.createClass({
-	    displayName: 'exports',
+	module.exports = function (_ref) {
+	    var text = _ref.text;
+	    var style = _ref.style;
+	    var project = _ref.project;
+	    var className = _ref.className;
 
-	    render: function render() {
-	        var _props = this.props;
-	        var text = _props.text;
-	        var style = _props.style;
-	        var project = _props.project;
-	        var className = _props.className;
+	    var props = _objectWithoutProperties(_ref, ['text', 'style', 'project', 'className']);
 
-	        var props = _objectWithoutProperties(_props, ['text', 'style', 'project', 'className']);
+	    className = className || '';
+	    className += ' github-fork-ribbon-wrapper';
 
-	        className = className || '';
-	        className += ' github-fork-ribbon-wrapper';
+	    text = text || 'Fork me on GitHub';
 
-	        text = this.props.text || 'Fork me on GitHub';
-
-	        return React.createElement(
+	    return React.createElement(
+	        'div',
+	        { className: className },
+	        React.createElement(
 	            'div',
-	            { className: className },
+	            { className: 'github-fork-ribbon', style: style },
 	            React.createElement(
-	                'div',
-	                { className: 'github-fork-ribbon', style: style },
-	                React.createElement(
-	                    'a',
-	                    _extends({ href: 'https://github.com/' + project }, props),
-	                    text
-	                )
+	                'a',
+	                _extends({ href: 'https://github.com/' + project }, props),
+	                text
 	            )
-	        );
-	    }
-	});
+	        )
+	    );
+	};
 
-/***/ },
+/***/ }),
 /* 1 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	module.exports = __WEBPACK_EXTERNAL_MODULE_1__;
 
-/***/ }
+/***/ })
 /******/ ])
 });
 ;
