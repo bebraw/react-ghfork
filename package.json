@@ -10,21 +10,21 @@
     "dist": "webpack --config ./config/webpack.dist.js && webpack --config ./config/webpack.dist.min.js"
   },
   "devDependencies": {
-    "babel-core": "^5.8.12",
-    "babel-loader": "^5.3.2",
+    "babel-core": "^5.8.38",
+    "babel-loader": "^5.4.2",
     "css-loader": "^0.15.6",
-    "file-loader": "^0.8.4",
+    "file-loader": "^0.8.5",
     "gh-pages": "^0.3.1",
-    "highlight.js": "^8.6.0",
+    "highlight.js": "^8.9.1",
     "html-loader": "^0.3.0",
-    "html-webpack-plugin": "^1.6.0",
-    "marked": "^0.3.3",
+    "html-webpack-plugin": "^1.7.0",
+    "marked": "^0.3.6",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "style-loader": "^0.12.3",
-    "webpack": "^1.10.5",
-    "webpack-dev-server": "^1.10.1",
-    "xtend": "^4.0.0"
+    "style-loader": "^0.12.4",
+    "webpack": "^1.15.0",
+    "webpack-dev-server": "^1.16.5",
+    "xtend": "^4.0.1"
   },
   "peerDependencies": {
     "react": ">=0.11.0 <17.0.0"
