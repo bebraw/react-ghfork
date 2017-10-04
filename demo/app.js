@@ -13,21 +13,19 @@ var Fork = require('../index.jsx');
 var readme = require('../README.md');
 
 
-module.exports = React.createClass({
-    render() {
-        var project = 'bebraw/react-ghfork';
+module.exports = function() {
+    var project = 'bebraw/react-ghfork';
 
-        return <article>
-            <Fork project={project} className='left' target='_blank'></Fork>
-            <Fork project={project} className='right' style={{
-                backgroundColor: '#000'
-            }}></Fork>
-            <Fork project={project} className='left-bottom' style={{
-                backgroundColor: '#060'
-            }}></Fork>
-            <Fork project={project} className='right-bottom' text='Forkkaa minut'></Fork>
+    return <article>
+        <Fork project={project} className='left' target='_blank'></Fork>
+        <Fork project={project} className='right' style={{
+            backgroundColor: '#000'
+        }}></Fork>
+        <Fork project={project} className='left-bottom' style={{
+            backgroundColor: '#060'
+        }}></Fork>
+        <Fork project={project} className='right-bottom' text='Forkkaa minut'></Fork>
 
-            <div dangerouslySetInnerHTML={{__html: readme}}></div>
-        </article>;
-    },
-});
+        <div dangerouslySetInnerHTML={{__html: readme}}></div>
+    </article>;
+};
