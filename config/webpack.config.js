@@ -24,7 +24,7 @@ module.exports = extend(common, {
     module: {
         loaders: common.loaders.concat([{
             test: /\.(js|jsx)$/,
-            loaders: ['react-hot', 'babel?stage=1'],
+            loaders: ['babel?stage=1'],
             exclude: /node_modules/,
         }])
     }

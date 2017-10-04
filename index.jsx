@@ -1,21 +1,16 @@
 'use strict';
 
-var React = require('react');
+const React = require('react');
 
+module.exports = function({text, style, project, className, ...props}) {
+    className = className || '';
+    className += ' github-fork-ribbon-wrapper';
 
-module.exports = React.createClass({
-    render() {
-        let {text, style, project, className, ...props} = this.props;
+    text = text || 'Fork me on GitHub';
 
-        className = className || '';
-        className += ' github-fork-ribbon-wrapper';
-
-        text = this.props.text || 'Fork me on GitHub';
-
-        return <div className={className}>
-            <div className='github-fork-ribbon' style={style}>
-                <a href={'https://github.com/' + project} {...props}>{text}</a>
-            </div>
-        </div>;
-    }
-});
+    return <div className={className}>
+        <div className='github-fork-ribbon' style={style}>
+            <a href={'https://github.com/' + project} {...props}>{text}</a>
+        </div>
+    </div>;
+}
